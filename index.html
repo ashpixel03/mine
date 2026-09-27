@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MineGuard AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MineGuard AI</h1>
+        <p>Real-Time Mine Subsidence Monitoring & Early Warning System</p>
+    </header>
+
+    <main>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Distance</h3>
+                <div id="distance">10.00 cm</div>
+            </div>
+
+            <div class="card">
+                <h3>Displacement</h3>
+                <div id="displacement">0.00 cm</div>
+            </div>
+
+            <div class="card">
+                <h3>Tilt</h3>
+                <div id="tilt">0.00°</div>
+            </div>
+
+            <div class="card">
+                <h3>Risk Score</h3>
+                <div id="riskScore">10 / 100</div>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard">
+
+            <div class="panel">
+                <h2>Live Sensor Data</h2>
+
+                <canvas id="sensorChart"></canvas>
+            </div>
+
+
+            <div class="panel">
+
+                <h2>Current Status</h2>
+
+                <div id="status" class="normal">
+                    NORMAL
+                </div>
+
+                <p id="message">
+                    Ground conditions are currently stable.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        MineGuard AI | Prototype Monitoring System
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
